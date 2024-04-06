@@ -11,7 +11,7 @@ from sklearn.metrics import accuracy_score, classification_report, precision_sco
 
 # Function to load and preprocess data
 def load_data(file_path):
-    cic = pandas.read_cvs(file_path)
+    cic = pandas.read_cvs('C:/Users/fatim/OneDrive/Documents/Uni/YR4/CM4105 Honours Project/Project/part1.csv')
 
     # Randomly select 500,000 data from the dataset
     dataSamples = cic.sample(n=500000)
